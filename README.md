@@ -29,7 +29,7 @@ and write your SSH public key to `/root/.ssh/authorized_keys`.
 ## How to use the toolkit
 
 * clone this repository, this also clones Armbian toolchain
-* revise `toolchain/lib/functions/cli/cli-armvuan.sh`
+* revise `cli-armvuan.sh`
 * run `prepare.sh` script to patch Armbian toolchain
 * look into `armbian/config/boards` for board names
 * make an image for your board:
