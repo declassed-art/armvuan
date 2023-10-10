@@ -10,8 +10,8 @@ Both Armbian and Devuan have their own toolchains for ARM boards and both have f
 the former is locked to systemd-based distros, the latter has poor support for ARM boards.
 
 Right now you have a plenty of choices:
-* [OrangePI R1](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.08.0-trunk_Orangepi-r1_daedalus_current_6.1.53.img.xz)
-* [OrangePI Zero](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.08.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz)
+* [OrangePI R1: Armbian_23.11.0-trunk_Orangepi-r1_daedalus_current_6.1.53.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Orangepi-r1_daedalus_current_6.1.53.img.xz)
+* [OrangePI Zero: Armbian_23.11.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz)
 
 Planned releases (I do have these boards):
 * NanoPI M4v2
