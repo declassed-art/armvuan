@@ -495,8 +495,8 @@ function armvuan_final_tweaks() {
 		auto lo
 		iface lo inet loopback
 
-		auto eth0
-		iface eth0 inet static
+		auto end0
+		iface end0 inet static
 		    address 192.168.0.100
 		    netmask 255.255.255.0
 		    gateway 192.168.0.1
@@ -563,6 +563,20 @@ function armvuan_final_tweaks() {
 	EOF
 	chmod +x "${SDCARD}"/etc/init.d/armbian-ramlog
 	chroot_sdcard update-rc.d armbian-ramlog defaults
+
+	case ${BOARDFAMILY} in
+	sun8i)
+		sun8i_tweaks
+		;;
+	esac
+}
+
+function sun8i_tweaks() {
+
+	# predictable interface name for soc ethernet
+	cat <<- EOF > "${SDCARD}"/etc/udev/rules.d/70-dwmac-sun8i.rules
+		SUBSYSTEM=="net", ACTION=="add", DRIVERS=="dwmac-sun8i", NAME="end0"
+	EOF
 }
 
 function armvuan_make_image() {

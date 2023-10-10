@@ -38,8 +38,3 @@ sudo ./armbian/compile.sh armvuan-build BOARD=orangepi-r1 BRANCH=current RELEASE
 ```
 
 Your image is here: `armbian/output/images`
-
-## Problems
-
-OrangePI R1 soc ethernet may appear either as eth0 or eth1. Predictable interface names do not work.
-The problem is in outdated eudev, someone should backport necessary changes from systemd udev.
