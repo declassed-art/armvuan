@@ -18,7 +18,7 @@ Pre-built images for boards I have:
 * [Armbian_23.11.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz)
 
 Work in progress:
-* OrangePI 3 (problems: `dwmac-sun8i 5020000.ethernet end0: __stmmac_open: Cannot attach to PHY (error: -19)`)
+* OrangePI 3
 
 Possibly in future (these boards are [already supported by Devuan](https://arm-files.devuan.org/)):
 * RaspberryPI
@@ -60,3 +60,18 @@ sudo ./armbian/compile.sh armvuan-build BOARD=orangepi-r1 BRANCH=current RELEASE
 ```
 
 Your image is here: `armbian/output/images`
+
+## Problems
+
+They broke u-boot at some point in past. My OrangePI 3 survived only because
+I set up boot process to continue from USB HDD so upgrade failed to find the right boot device.
+
+in dmesg output on my OrangePI 3:
+```
+mdio_bus stmmac-0: MDIO device at address 1 is missing.
+dwmac-sun8i 5020000.ethernet end0: __stmmac_open: Cannot attach to PHY (error: -19)
+```
+
+I suspect u-boot is guilty of USB problems on NanoPI M4v2.
+
+Remember, dist-upgrade is dangerous in Armbian.
