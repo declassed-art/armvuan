@@ -1,8 +1,8 @@
 # Armvuan
 
 This distro is based on two prominent projects: [Armbian](https://www.armbian.com) and [Devuan](https://www.devuan.org).
-It is built in the simplest way, using Devuan debootstrapped system with kernel,
-u-boot and all board support from Armbian, thus avoiding compilation parties as much as possible.
+It is built in the simplest way, using Devuan debootstrapped system with kernel, dtb,
+u-boot, and board support packages from Armbian, thus avoiding compilation parties as much as possible.
 
 Armvuan builder uses Armbian's toolkit but it's not a part of it as it may seem.
 Actually I don't know how this pet project should evolve.
