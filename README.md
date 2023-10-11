@@ -28,6 +28,16 @@ and does not run any configuration script at first boot.
 After flashing your microSD card you need to make tweaks to `/etc/network/interfaces`
 and write your SSH public key to `/root/.ssh/authorized_keys`.
 
+## Troubleshooting hints
+
+If you cannot connect to a headless board, try the following:
+
+1. Reduce commit to a reasonable value, i.e. 6 in `/etc/fstab`
+2. Disable ramlog by unlinking `/etc/rcS.d/S??armbian-ramlog`
+3. Insert microSD card in and power on your board
+4. Wait a couple of minutes
+5. Power off, pull microSD card out and examine `/var/log`
+
 ## How to use the toolkit
 
 * clone this repository with --recurse-submodules option
