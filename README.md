@@ -19,10 +19,12 @@ Planned images (I do have these boards):
 * NanoPI Neo3
 * NanoPI R2S
 * OrangePI 3
-* RaspberryPI 3 (not supported by Armbian, but...)
-* RaspberryPI 4
 
-Targetted primarily to headless boards, this distro does not run any configuration script at first boot.
+Possibly in future (these boards are [already supported by Devuan](https://arm-files.devuan.org/)):
+* RaspberryPI
+
+Targetted primarily to headless boards, this distro is very minimalistic
+and does not run any configuration script at first boot.
 After flashing your microSD card you need to make tweaks to `/etc/network/interfaces`
 and write your SSH public key to `/root/.ssh/authorized_keys`.
 
