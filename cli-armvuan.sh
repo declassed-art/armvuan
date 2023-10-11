@@ -568,6 +568,9 @@ function armvuan_final_tweaks() {
 	sun8i)
 		sun8i_tweaks
 		;;
+	rockchip64)
+		rockchip64_tweaks
+		;;
 	esac
 }
 
@@ -576,6 +579,14 @@ function sun8i_tweaks() {
 	# predictable interface name for soc ethernet
 	cat <<- EOF > "${SDCARD}"/etc/udev/rules.d/70-dwmac-sun8i.rules
 		SUBSYSTEM=="net", ACTION=="add", DRIVERS=="dwmac-sun8i", NAME="end0"
+	EOF
+}
+
+function rockchip64_tweaks() {
+
+	# predictable interface name for soc ethernet
+	cat <<- EOF > "${SDCARD}"/etc/udev/rules.d/70-dwmac-rockchip64.rules
+		SUBSYSTEM=="net", ACTION=="add", DRIVERS=="rk_gmac-dwmac", NAME="end0"
 	EOF
 }
 
