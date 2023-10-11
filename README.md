@@ -28,6 +28,16 @@ and does not run any configuration script at first boot.
 After flashing your microSD card you need to make tweaks to `/etc/network/interfaces`
 and write your SSH public key to `/root/.ssh/authorized_keys`.
 
+## Tweaks
+
+Armvuan is shipped with the following services enabled:
+* armbian-hardware-optimization
+* armbian-ramlog
+
+All the rest is up to you. You can convert necessary services
+from board support package located in `/lib/systemd/system/`.
+Their names start from`armbian-`.
+
 ## Troubleshooting hints
 
 If you cannot connect to a headless board, try the following:
