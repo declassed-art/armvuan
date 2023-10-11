@@ -9,15 +9,15 @@ Actually I don't know how this pet project should evolve.
 Both Armbian and Devuan have their own toolchains for ARM boards and both have fatal flaws:
 the former is locked to systemd-based distros, the latter has poor support for ARM boards.
 
-Pre-built images:
+Pre-built images for boards I have:
 * [Armbian_23.11.0-trunk_Nanopi-r2s_daedalus_current_6.1.50.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Nanopi-r2s_daedalus_current_6.1.50.img.xz)
+* [Armbian_23.11.0-trunk_Nanopim4v2_daedalus_current_6.1.50.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Nanopim4v2_daedalus_current_6.1.50.img.xz) Caveat: USB problems
 * [Armbian_23.11.0-trunk_Nanopineo3_daedalus_current_6.1.50.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Nanopineo3_daedalus_current_6.1.50.img.xz)
 * [Armbian_23.11.0-trunk_Orangepipc_daedalus_current_6.1.53.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Orangepipc_daedalus_current_6.1.53.img.xz)
 * [Armbian_23.11.0-trunk_Orangepi-r1_daedalus_current_6.1.53.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Orangepi-r1_daedalus_current_6.1.53.img.xz)
 * [Armbian_23.11.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz](https://github.com/declassed-art/armvuan/releases/download/daedalus/Armbian_23.11.0-trunk_Orangepizero_daedalus_current_6.1.53.img.xz)
 
-Planned images (I do have these boards):
-* NanoPI M4v2
+Planned:
 * OrangePI 3
 
 Possibly in future (these boards are [already supported by Devuan](https://arm-files.devuan.org/)):
